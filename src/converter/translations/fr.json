@@ -1,0 +1,17 @@
+{
+    "title": "Convertisseur Universel",
+    "subtitle": "Convertissez rapidement entre différentes unités",
+    "from": "De",
+    "to": "Vers",
+    "value": "Valeur à convertir",
+    "value_placeholder": "Entrez une valeur",
+    "result": "Résultat",
+    "swap": "Inverser les unités",
+    "previous_categories": "Catégories précédentes",
+    "next_categories": "Catégories suivantes",
+    "converting": "Conversion...",
+    "error": "Erreur",
+    "network_error": "Erreur réseau",
+    "currency_updated": "Taux de change mis à jour automatiquement",
+    "currency_cache": "Cache : 1 heure · ExchangeRate-API"
+}

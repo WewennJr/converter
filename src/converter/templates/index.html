@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ translations.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>{{ translations.title }}</h1>
+            <p>{{ translations.subtitle }}</p>
+        </header>
+
+        <div class="card">
+            <div class="category-navigation">
+                <button
+                    class="category-arrow category-arrow-left"
+                    id="categoryPrev"
+                    type="button"
+                    aria-label="{{ translations.previous_categories }}"
+                >
+                    ‹
+                </button>
+
+                <div
+                    class="category-tabs"
+                    id="categoryTabs"
+                    role="tablist"
+                ></div>
+
+                <button
+                    class="category-arrow category-arrow-right"
+                    id="categoryNext"
+                    type="button"
+                    aria-label="{{ translations.next_categories }}"
+                >
+                    ›
+                </button>
+            </div>
+
+            <div class="converter-content">
+                <div id="panelsContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.CATEGORIES_DATA = {{ categories | tojson }};
+        window.TRANSLATIONS = {{ translations | tojson }};
+    </script>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

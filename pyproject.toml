@@ -1,0 +1,21 @@
+[project]
+name = "converter"
+version = "0.1.0"
+description = "Unit conversion website with Flask"
+readme = "README.md"
+authors = [
+    { name = "WewennJr", email = "ewennlegros@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.0.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+converter = "converter.app:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"

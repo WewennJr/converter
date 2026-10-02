@@ -1,0 +1,17 @@
+{
+    "title": "Universal Converter",
+    "subtitle": "Quickly convert between different units",
+    "from": "From",
+    "to": "To",
+    "value": "Value to convert",
+    "value_placeholder": "Enter a value",
+    "result": "Result",
+    "swap": "Swap units",
+    "previous_categories": "Previous categories",
+    "next_categories": "Next categories",
+    "converting": "Converting...",
+    "error": "Error",
+    "network_error": "Network error",
+    "currency_updated": "Exchange rates updated automatically",
+    "currency_cache": "Cache: 1 hour · ExchangeRate-API"
+}
